@@ -102,6 +102,55 @@ The objective of this project is to compare the performance of popular Convoluti
 - Comparative loss and accuracy curves for all CNN architectures.
 - Performance metrics for MNIST, FMNIST, and CIFAR-10 datasets.
 
+## Comparison of CNN Architectures on MNIST Dataset
+
+| Model       | Accuracy | Precision | Recall | F1-Score |
+|-------------|----------|-----------|--------|----------|
+| **AlexNet** | 0.9922   | 0.9920    | 0.9922 | 0.9921   |
+| **GoogLeNet** | 0.9922  | 0.9922    | 0.9921 | 0.9921   |
+| **VGG16**   | 0.9925   | 0.9926    | 0.9924 | 0.9925   |
+| **Xception** | 0.9656  | 0.9660    | 0.9652 | 0.9654   |
+| **LeNet5**  | 0.9900   | 0.9899    | 0.9899 | 0.9899   |
+| **ResNet**  | 0.9924   | 0.9926    | 0.9922 | 0.9924   |
+
+### Insights:
+- **VGG16** achieved the highest accuracy (0.9925) on the MNIST dataset, followed by **ResNet** and **AlexNet** with very close performance.
+- **Xception** had a noticeably lower performance on MNIST, with an accuracy of 0.9656, which might be due to its design being more suited for more complex tasks.
+- **LeNet5** performed well with an accuracy of 0.9900 but lagged slightly behind more modern architectures like VGG16 and ResNet.
+
+## Comparison of CNN Architectures on FMNIST Dataset
+
+| Model       | Accuracy | Precision | Recall | F1-Score |
+|-------------|----------|-----------|--------|----------|
+| **AlexNet** | 0.9194   | 0.9194    | 0.9194 | 0.9190   |
+| **GoogLeNet** | 0.9176  | 0.9196    | 0.9176 | 0.9180   |
+| **VGG16**   | 0.9299   | 0.9301    | 0.9299 | 0.9293   |
+| **Xception** | 0.8483  | 0.8501    | 0.8483 | 0.8465   |
+| **LeNet5**  | 0.8956   | 0.8954    | 0.8956 | 0.8948   |
+| **ResNet**  | 0.8625   | 0.8804    | 0.8625 | 0.8617   |
+| **SENet**   | 0.4468   | 0.6149    | 0.4468 | 0.3563   |
+
+### Insights:
+- **VGG16** achieved the highest accuracy (0.9299) on the FMNIST dataset, followed closely by **AlexNet** and **GoogLeNet** with similar performance.
+- **Xception** performed poorly on FMNIST, with an accuracy of 0.8483, suggesting that this model may not be the best fit for this type of task.
+- **ResNet** and **LeNet5** had moderate performance, with **LeNet5** achieving better results than **ResNet**.
+- **SENet** had significantly lower performance compared to the other models, possibly due to the architecture being more complex and less suited for this dataset.
+
+## Comparison of CNN Architectures on CIFAR-10 Dataset
+
+| Model        | Accuracy | Precision | Recall  | F1-Score |
+|--------------|----------|-----------|---------|----------|
+| **AlexNet**  | 0.7556   | 0.7565    | 0.7556  | 0.7550   |
+| **VGG16**    | 0.9925   | 0.9926    | 0.9924  | 0.9925   |
+| **Xception** | 0.9656   | 0.9660    | 0.9652  | 0.9654   |
+| **LeNet5**   | 0.9900   | 0.9899    | 0.9899  | 0.9899   |
+| **ResNet**   | 0.9924   | 0.9926    | 0.9922  | 0.9924   |
+
+### Insights:
+- **VGG16** achieved the highest accuracy (0.9925) on the CIFAR-10 dataset, followed closely by **ResNet** (0.9924), both of which outperformed the other models significantly.
+- **LeNet5** achieved excellent results (accuracy of 0.9900), showcasing strong performance on CIFAR-10.
+- **Xception** performed well with an accuracy of 0.9656 but was still behind the top models.
+- **AlexNet** achieved the lowest accuracy (0.7556), suggesting it may not be the most efficient model for the CIFAR-10 dataset compared to others.
 ---
 
 ## **Technologies Used**
